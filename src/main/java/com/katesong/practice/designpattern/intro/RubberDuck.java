@@ -1,8 +1,10 @@
 package com.katesong.practice.designpattern.intro;
 
+import com.katesong.practice.designpattern.intro.behavior.FlyNoWay;
+
 public class RubberDuck extends Duck {
 
-	public String fly() {
-		return "Can't fly.";
+	public RubberDuck() {
+		setFlyBehavior(new FlyNoWay());
 	}
 }
